@@ -24,7 +24,7 @@ job_data["status"] = job_data["status"].apply(change_status_to_binary)
 
 [0;31m[0m
 [0;31mNameError[0mTraceback (most recent call last)
-[0;32m<ipython-input-7-0d541edfae82>[0m in [0;36m<module>[0;34m[0m
+[0;32m<ipython-input-7-0d541edfae82>[0m in [0;36m<cell line: 3>[0;34m()[0m
 [1;32m      1[0m [0;31m# Update all values[0m[0;34m[0m[0;34m[0m[0m
 [1;32m      2[0m [0mjob_data[0m[0;34m[[0m[0;34m"gender"[0m[0;34m][0m [0;34m=[0m [0mjob_data[0m[0;34m[[0m[0;34m"gender"[0m[0;34m][0m[0;34m.[0m[0mapply[0m[0;34m([0m[0mchange_gender_to_binary[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0;32m----> 3[0;31m [0mjob_data[0m[0;34m[[0m[0;34m"status"[0m[0;34m][0m [0;34m=[0m [0mjob_data[0m[0;34m[[0m[0;34m"status"[0m[0;34m][0m[0;34m.[0m[0mapply[0m[0;34m([0m[0mchange_status_to_binary[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
