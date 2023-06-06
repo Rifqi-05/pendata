@@ -219,7 +219,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/drive/1La2e1ePZq-t2NKCA9znTmfD0J3dCTvem?usp=sharing/github/Rifqi-05/pendata/blob/master/docs/tugas-pendat/PCA-Transformasi-Dimensi.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/Rifqi-05/pendata/blob/main/_sources/tugas-pendat/PCA-Transformasi-Dimensi.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -442,7 +442,7 @@ memory usage: 7.0+ KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8e1c72fd-fd01-4c46-9d99-cefa046de4a3">
+  <div id="df-71437fe3-1b70-4fbc-a44e-a28559818bb1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -528,7 +528,7 @@ memory usage: 7.0+ KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8e1c72fd-fd01-4c46-9d99-cefa046de4a3')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-71437fe3-1b70-4fbc-a44e-a28559818bb1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -579,12 +579,12 @@ memory usage: 7.0+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8e1c72fd-fd01-4c46-9d99-cefa046de4a3 button.colab-df-convert');
+          document.querySelector('#df-71437fe3-1b70-4fbc-a44e-a28559818bb1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8e1c72fd-fd01-4c46-9d99-cefa046de4a3');
+          const element = document.querySelector('#df-71437fe3-1b70-4fbc-a44e-a28559818bb1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -613,7 +613,7 @@ memory usage: 7.0+ KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0f596798-e135-4774-80ca-555961e047b4">
+  <div id="df-be2a48f1-9c54-43df-a8ab-c42dade47865">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -692,7 +692,7 @@ memory usage: 7.0+ KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0f596798-e135-4774-80ca-555961e047b4')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-be2a48f1-9c54-43df-a8ab-c42dade47865')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -743,12 +743,12 @@ memory usage: 7.0+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0f596798-e135-4774-80ca-555961e047b4 button.colab-df-convert');
+          document.querySelector('#df-be2a48f1-9c54-43df-a8ab-c42dade47865 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0f596798-e135-4774-80ca-555961e047b4');
+          const element = document.querySelector('#df-be2a48f1-9c54-43df-a8ab-c42dade47865');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -771,7 +771,8 @@ memory usage: 7.0+ KB
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Label encoding since the algorithms we are going to use do not take non numerical or boolean data as inputs</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#merubah kelas menjadi numerik</span>
+<span class="c1">## Label encoding since the algorithms we are going to use do not take non numerical or boolean data as inputs</span>
 <span class="n">iris_data</span><span class="o">.</span><span class="n">Species</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s1">&#39;Iris-setosa&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;Iris-versicolor&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Iris-virginica&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -785,7 +786,7 @@ memory usage: 7.0+ KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-34e535bb-c6ce-4cc2-ba5a-0d22eb3eb61c">
+  <div id="df-07f49037-9c8f-4ddb-9949-74859728356a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -864,7 +865,7 @@ memory usage: 7.0+ KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-34e535bb-c6ce-4cc2-ba5a-0d22eb3eb61c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-07f49037-9c8f-4ddb-9949-74859728356a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -915,12 +916,12 @@ memory usage: 7.0+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-34e535bb-c6ce-4cc2-ba5a-0d22eb3eb61c button.colab-df-convert');
+          document.querySelector('#df-07f49037-9c8f-4ddb-9949-74859728356a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-34e535bb-c6ce-4cc2-ba5a-0d22eb3eb61c');
+          const element = document.querySelector('#df-07f49037-9c8f-4ddb-9949-74859728356a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -969,7 +970,8 @@ memory usage: 7.0+ KB
 <p><strong>Bivariate EDA</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># memvisualisasikan distribusi data pada setiap fitur dalam dataset Iris, dengan membaginya berdasarkan spesiesnya.</span>
+<span class="n">fig</span><span class="p">,</span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
 <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">iris_data</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
