@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perhitungan Naive Bayes tanpa PCA &#8212; Ainur Rifqi</title>
+    <title>UAS DATA MINING &#8212; Ainur Rifqi</title>
   
   
   
@@ -165,7 +165,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Tugas-4.html">Tugas 4 : Decision Tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MLP.html">Tugas 5 : Multilayer Perceptron (MLP)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PCA-Transformasi-Dimensi.html">Tugas 6 : PCA with iris dataset</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Perhitungan Naive Bayes tanpa PCA</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>UAS DATA MINING</strong></a></li>
+
 
 
 
@@ -383,7 +384,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Perhitungan Naive Bayes tanpa PCA</h1>
+    <h1>UAS DATA MINING</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -393,10 +394,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Perhitungan Naive Bayes tanpa PCA</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-knn-tanpa-pca"><strong>Perhitungan KNN tanpa PCA</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-decission-tree-tanpa-pca"><strong>Perhitungan Decission Tree tanpa PCA</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-ann-tanpa-pca"><strong>Perhitungan ANN tanpa PCA</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>UAS DATA MINING</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-naive-bayes">Perhitungan Naive Bayes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-knn">Perhitungan KNN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-decission-tree">Perhitungan Decission Tree</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-mlp">Perhitungan MLP</a></li>
 </ul>
 
             </nav>
@@ -409,8 +411,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="perhitungan-naive-bayes-tanpa-pca">
-<h1><strong>Perhitungan Naive Bayes tanpa PCA</strong><a class="headerlink" href="#perhitungan-naive-bayes-tanpa-pca" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="uas-data-mining">
+<h1><strong>UAS DATA MINING</strong><a class="headerlink" href="#uas-data-mining" title="Permalink to this heading">#</a></h1>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="perhitungan-naive-bayes">
+<h1>Perhitungan Naive Bayes<a class="headerlink" href="#perhitungan-naive-bayes" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -430,7 +435,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e2731849-bb4f-4f7a-93b8-10e0611879c0">
+  <div id="df-d653828c-4d92-4a46-8bba-f83eb1dabe96">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -640,7 +645,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e2731849-bb4f-4f7a-93b8-10e0611879c0')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-d653828c-4d92-4a46-8bba-f83eb1dabe96')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -691,12 +696,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e2731849-bb4f-4f7a-93b8-10e0611879c0 button.colab-df-convert');
+          document.querySelector('#df-d653828c-4d92-4a46-8bba-f83eb1dabe96 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e2731849-bb4f-4f7a-93b8-10e0611879c0');
+          const element = document.querySelector('#df-d653828c-4d92-4a46-8bba-f83eb1dabe96');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -728,7 +733,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-408ca7bb-46eb-4221-bd9d-96bd43e4a139">
+  <div id="df-c3b17a53-3cf4-4e9b-b8cd-8694f578f4c7">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -853,7 +858,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-408ca7bb-46eb-4221-bd9d-96bd43e4a139')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c3b17a53-3cf4-4e9b-b8cd-8694f578f4c7')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -904,12 +909,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-408ca7bb-46eb-4221-bd9d-96bd43e4a139 button.colab-df-convert');
+          document.querySelector('#df-c3b17a53-3cf4-4e9b-b8cd-8694f578f4c7 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-408ca7bb-46eb-4221-bd9d-96bd43e4a139');
+          const element = document.querySelector('#df-c3b17a53-3cf4-4e9b-b8cd-8694f578f4c7');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1068,8 +1073,8 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="perhitungan-knn-tanpa-pca">
-<h1><strong>Perhitungan KNN tanpa PCA</strong><a class="headerlink" href="#perhitungan-knn-tanpa-pca" title="Permalink to this heading">#</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="perhitungan-knn">
+<h1>Perhitungan KNN<a class="headerlink" href="#perhitungan-knn" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1087,7 +1092,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0ab13f0b-a042-488a-8122-c042d96cdbbb">
+  <div id="df-cbbc828e-6b05-490d-8ac9-1a39ea51f865">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1297,7 +1302,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0ab13f0b-a042-488a-8122-c042d96cdbbb')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-cbbc828e-6b05-490d-8ac9-1a39ea51f865')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1348,12 +1353,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0ab13f0b-a042-488a-8122-c042d96cdbbb button.colab-df-convert');
+          document.querySelector('#df-cbbc828e-6b05-490d-8ac9-1a39ea51f865 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0ab13f0b-a042-488a-8122-c042d96cdbbb');
+          const element = document.querySelector('#df-cbbc828e-6b05-490d-8ac9-1a39ea51f865');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1385,7 +1390,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a37ec5b4-7e58-4463-bd74-2b56ba107be9">
+  <div id="df-76b20e5c-7ace-4810-aafa-100e4318275a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1510,7 +1515,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a37ec5b4-7e58-4463-bd74-2b56ba107be9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-76b20e5c-7ace-4810-aafa-100e4318275a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1561,12 +1566,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a37ec5b4-7e58-4463-bd74-2b56ba107be9 button.colab-df-convert');
+          document.querySelector('#df-76b20e5c-7ace-4810-aafa-100e4318275a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a37ec5b4-7e58-4463-bd74-2b56ba107be9');
+          const element = document.querySelector('#df-76b20e5c-7ace-4810-aafa-100e4318275a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1680,8 +1685,8 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="perhitungan-decission-tree-tanpa-pca">
-<h1><strong>Perhitungan Decission Tree tanpa PCA</strong><a class="headerlink" href="#perhitungan-decission-tree-tanpa-pca" title="Permalink to this heading">#</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="perhitungan-decission-tree">
+<h1>Perhitungan Decission Tree<a class="headerlink" href="#perhitungan-decission-tree" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1701,7 +1706,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2aea6a62-9829-4962-ba27-75da44c52ea5">
+  <div id="df-78450d57-1d09-4e1b-a606-303689ab7710">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1826,7 +1831,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2aea6a62-9829-4962-ba27-75da44c52ea5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-78450d57-1d09-4e1b-a606-303689ab7710')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1877,12 +1882,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2aea6a62-9829-4962-ba27-75da44c52ea5 button.colab-df-convert');
+          document.querySelector('#df-78450d57-1d09-4e1b-a606-303689ab7710 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2aea6a62-9829-4962-ba27-75da44c52ea5');
+          const element = document.querySelector('#df-78450d57-1d09-4e1b-a606-303689ab7710');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2030,8 +2035,8 @@ Test set score: 0.73
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="perhitungan-ann-tanpa-pca">
-<h1><strong>Perhitungan ANN tanpa PCA</strong><a class="headerlink" href="#perhitungan-ann-tanpa-pca" title="Permalink to this heading">#</a></h1>
+<div class="tex2jax_ignore mathjax_ignore section" id="perhitungan-mlp">
+<h1>Perhitungan MLP<a class="headerlink" href="#perhitungan-mlp" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -2051,7 +2056,7 @@ Test set score: 0.73
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-22caa362-def4-4f9e-bb8c-9c3c7a8857f4">
+  <div id="df-06d66ca0-49d6-492a-9e67-f7408d1a785a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2176,7 +2181,7 @@ Test set score: 0.73
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-22caa362-def4-4f9e-bb8c-9c3c7a8857f4')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-06d66ca0-49d6-492a-9e67-f7408d1a785a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -2227,12 +2232,12 @@ Test set score: 0.73
 
       <script>
         const buttonEl =
-          document.querySelector('#df-22caa362-def4-4f9e-bb8c-9c3c7a8857f4 button.colab-df-convert');
+          document.querySelector('#df-06d66ca0-49d6-492a-9e67-f7408d1a785a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-22caa362-def4-4f9e-bb8c-9c3c7a8857f4');
+          const element = document.querySelector('#df-06d66ca0-49d6-492a-9e67-f7408d1a785a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2325,10 +2330,10 @@ Test set score: 0.73
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 1, loss = 0.75442892
 Iteration 2, loss = 0.66830451
+Iteration 3, loss = 0.62902966
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 3, loss = 0.62902966
-Iteration 4, loss = 0.61338619
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 4, loss = 0.61338619
 Iteration 5, loss = 0.60707670
 </pre></div>
 </div>
@@ -2339,48 +2344,60 @@ Iteration 8, loss = 0.59741201
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 9, loss = 0.59493809
 Iteration 10, loss = 0.59265959
-Iteration 11, loss = 0.59054924
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 11, loss = 0.59054924
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 12, loss = 0.58848953
-Iteration 13, loss = 0.58660022
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 14, loss = 0.58485920
-Iteration 15, loss = 0.58321003
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 13, loss = 0.58660022
+Iteration 14, loss = 0.58485920
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 15, loss = 0.58321003
 Iteration 16, loss = 0.58158586
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 17, loss = 0.58002978
 Iteration 18, loss = 0.57860288
-Iteration 19, loss = 0.57725083
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 20, loss = 0.57594419
-Iteration 21, loss = 0.57465528
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 19, loss = 0.57725083
+Iteration 20, loss = 0.57594419
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 21, loss = 0.57465528
 Iteration 22, loss = 0.57349117
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 23, loss = 0.57245281
 Iteration 24, loss = 0.57129866
-Iteration 25, loss = 0.57031578
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 26, loss = 0.56939619
-Iteration 27, loss = 0.56848629
-Iteration 28, loss = 0.56760885
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 25, loss = 0.57031578
+Iteration 26, loss = 0.56939619
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 29, loss = 0.56676141
-Iteration 30, loss = 0.56601579
-Iteration 31, loss = 0.56527655
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 27, loss = 0.56848629
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 32, loss = 0.56461071
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 28, loss = 0.56760885
+Iteration 29, loss = 0.56676141
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 30, loss = 0.56601579
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 31, loss = 0.56527655
+Iteration 32, loss = 0.56461071
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 33, loss = 0.56392883
-Iteration 34, loss = 0.56327771
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 34, loss = 0.56327771
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iteration 35, loss = 0.56269294
@@ -2473,10 +2490,11 @@ Training loss did not improve more than tol=0.001000 for 10 consecutive epochs. 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Perhitungan Naive Bayes tanpa PCA</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-knn-tanpa-pca"><strong>Perhitungan KNN tanpa PCA</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-decission-tree-tanpa-pca"><strong>Perhitungan Decission Tree tanpa PCA</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-ann-tanpa-pca"><strong>Perhitungan ANN tanpa PCA</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>UAS DATA MINING</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-naive-bayes">Perhitungan Naive Bayes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-knn">Perhitungan KNN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-decission-tree">Perhitungan Decission Tree</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-mlp">Perhitungan MLP</a></li>
 </ul>
 
   </nav></div>
