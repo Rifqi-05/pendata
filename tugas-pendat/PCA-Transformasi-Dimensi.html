@@ -63,6 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'tugas-pendat/PCA-Transformasi-Dimensi';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Perhitungan Naive Bayes tanpa PCA" href="UAS.html" />
     <link rel="prev" title="Tugas 5 : Multilayer Perceptron (MLP)" href="MLP.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -165,6 +166,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Tugas-4.html">Tugas 4 : Decision Tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MLP.html">Tugas 5 : Multilayer Perceptron (MLP)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas 6 : PCA with iris dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UAS.html"><strong>Perhitungan Naive Bayes tanpa PCA</strong></a></li>
+
+
+
 </ul>
 
     </div>
@@ -442,7 +447,7 @@ memory usage: 7.0+ KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-072b50e9-bf83-4313-ba5a-3a4a4b420a20">
+  <div id="df-f51c2ef9-8a98-494e-9363-7e7f0cc2fd44">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -528,7 +533,7 @@ memory usage: 7.0+ KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-072b50e9-bf83-4313-ba5a-3a4a4b420a20')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f51c2ef9-8a98-494e-9363-7e7f0cc2fd44')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -579,12 +584,12 @@ memory usage: 7.0+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-072b50e9-bf83-4313-ba5a-3a4a4b420a20 button.colab-df-convert');
+          document.querySelector('#df-f51c2ef9-8a98-494e-9363-7e7f0cc2fd44 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-072b50e9-bf83-4313-ba5a-3a4a4b420a20');
+          const element = document.querySelector('#df-f51c2ef9-8a98-494e-9363-7e7f0cc2fd44');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -613,7 +618,7 @@ memory usage: 7.0+ KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bef6f575-7ade-4d5b-b236-04ee2ad8f130">
+  <div id="df-a9083a0a-98b2-4ebc-b829-9a32c443fd4b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -692,7 +697,7 @@ memory usage: 7.0+ KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bef6f575-7ade-4d5b-b236-04ee2ad8f130')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a9083a0a-98b2-4ebc-b829-9a32c443fd4b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -743,12 +748,12 @@ memory usage: 7.0+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bef6f575-7ade-4d5b-b236-04ee2ad8f130 button.colab-df-convert');
+          document.querySelector('#df-a9083a0a-98b2-4ebc-b829-9a32c443fd4b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bef6f575-7ade-4d5b-b236-04ee2ad8f130');
+          const element = document.querySelector('#df-a9083a0a-98b2-4ebc-b829-9a32c443fd4b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -786,7 +791,7 @@ memory usage: 7.0+ KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-40a43537-2358-444b-b50f-8a9f74dabc45">
+  <div id="df-490c8167-2af2-4b83-8abb-d8f3fa36e93f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -865,7 +870,7 @@ memory usage: 7.0+ KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-40a43537-2358-444b-b50f-8a9f74dabc45')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-490c8167-2af2-4b83-8abb-d8f3fa36e93f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -916,12 +921,12 @@ memory usage: 7.0+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-40a43537-2358-444b-b50f-8a9f74dabc45 button.colab-df-convert');
+          document.querySelector('#df-490c8167-2af2-4b83-8abb-d8f3fa36e93f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-40a43537-2358-444b-b50f-8a9f74dabc45');
+          const element = document.querySelector('#df-490c8167-2af2-4b83-8abb-d8f3fa36e93f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1225,6 +1230,15 @@ Test score after PCA 0.9777777777777777 %
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Tugas 5 : Multilayer Perceptron (MLP)</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="UAS.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Perhitungan Naive Bayes tanpa PCA</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
