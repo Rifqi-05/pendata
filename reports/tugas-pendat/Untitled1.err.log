@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/local/lib/python3.10/dist-packages/jupyter_core/utils/__init__.py", line 166, in wrapped
+    return loop.run_until_complete(inner)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/usr/local/lib/python3.10/dist-packages/nbclient/client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# memvisualisasikan distribusi data pada setiap fitur dalam dataset Iris, dengan membaginya berdasarkan spesiesnya.
+fig,ax = plt.subplots(nrows = 2, ncols=2, figsize=(16,10))
+row = 0
+col = 0
+for i in range(len(dataset.columns) -1):
+    if col > 1:
+        row += 1
+        col = 0
+    axes = ax[row,col]
+    sns.boxplot(x = dataset['Classification'], y = dataset[dataset.columns[i]],ax = axes)
+    col += 1
+plt.tight_layout()
+# plt.title("Individual Features by Class")
+plt.show()
+------------------
+
+
+[0;31m[0m
+[0;31mIndexError[0mTraceback (most recent call last)
+[0;32m<ipython-input-7-a4d61978619b>[0m in [0;36m<cell line: 5>[0;34m()[0m
+[1;32m      7[0m         [0mrow[0m [0;34m+=[0m [0;36m1[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      8[0m         [0mcol[0m [0;34m=[0m [0;36m0[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 9[0;31m     [0maxes[0m [0;34m=[0m [0max[0m[0;34m[[0m[0mrow[0m[0;34m,[0m[0mcol[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     10[0m     [0msns[0m[0;34m.[0m[0mboxplot[0m[0;34m([0m[0mx[0m [0;34m=[0m [0mdataset[0m[0;34m[[0m[0;34m'Classification'[0m[0;34m][0m[0;34m,[0m [0my[0m [0;34m=[0m [0mdataset[0m[0;34m[[0m[0mdataset[0m[0;34m.[0m[0mcolumns[0m[0;34m[[0m[0mi[0m[0;34m][0m[0;34m][0m[0;34m,[0m[0max[0m [0;34m=[0m [0maxes[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     11[0m     [0mcol[0m [0;34m+=[0m [0;36m1[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mIndexError[0m: index 2 is out of bounds for axis 0 with size 2
+
